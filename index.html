@@ -5,59 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Report</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
 </head>
 
 <body class="body">
 
-    <div class="zipcode">
-        <input type="text" name="zipCode" id="zipCode" placegolder="Enter Your Zip Code"/>
+    <div class="requestDiv">
+        <input type="text" name="zipCode" id="zipCode" placeholder="Enter Your Zip Code"/>
         <button onclick="getLatLonByZipCode()"> Submit </button>
     </div>
    
- <section>   
+ <section class="reportSection">   
 
     <div class="first-container">
         <table>
             <tr>
                 <th><div class="weather-forecast">
-                    <h1 class="h1">WEATHER <br> FORECAST</h1>
-                    <img src="" alt="">
-                </div></th>
+                    <h1 contenteditable="true">WEATHER <br> FORECAST</h1>
+                    </div>
+                </th>
             </tr>
 
             <tr>
-                <div class="report-box">
-
-                        <div class="current-city">
-                        <span> City </span> <br> <span class="city" id="city"></span> <br/>
+                <div class="reponseDiv">
+                    <div class="current-city">
+                        <h1><span> </span> <span class="city" id="city"></span></h1> <br/>
                     </div>
-
-
-                    <div class="current-conditions">
-                        <span> Current Conditions: </span> <br> <span class="currentContition" id="currentContition"></span> <span id="icon"> </span><br/>
-                    </div>
-
-                    
-                    <div class="current-temperature">
-                        <span> Current temperature</span> <br> <span class="currentTemp" id="currentTemp"></span><br/>
-                    </div>
-                    
-                    
                     <div class="current-date">
-                        <span> Current Date: </span> <br> <span class="currentDate" id="currentDate"></span> <br/>
+                        <h3><span></span><span class="currentDate" id="currentDate"></span></h3> <br/>
                     </div>
-
-                    
+                    <div class="current-temperature">
+                        <h1><span></span><span class="currentTemp" id="currentTemp"></span></h1><br/>
+                        <div></div>
+                    </div>  
+                    <div>
+                        <img src=""  id="sunny" style="display:none">
+                    </div>
+                    <div class="current-conditions">
+                        <h3><span></span><span class="currentContition" id="currentContition"></span> <span id="icon"> </span></h3><br/>
+                    </div>                                                                         
                     <div class="temperature">
-                        <span> Temp Hi/Lo: </span> <br> <span class="TempHiLow" id="TempHiLow">  </span><br/>
+                        <h3><span></span><span class="TempHiLow" id="TempHiLow"> </span></h3><br/>
                     </div>
-
+                    <div class="modReq">
+                        <!--Moderate Req to display addtional climate for next three days-->
+                        <div class="day1" id="dayOne"> <img src="" id="dayOneWeather"> <br> <span id="dayOneDate"> </span> <br/> <span id="dayOneTemp">  </span> <br/> <span id="dayOneCond"> </span>  </div>
+                        <div class="day2" id="dayTwo"> <img  src="" id="dayTwoWeather"> <br> <span id="dayTwoDate"> </span> <br/><span id="dayTwoTemp"> </span> <br> <span id="dayTwoCond"> </span>  </div>
+                        <div class="day3" id="dayThree"> <img src="" id="dayThreeWeather"> <br> <span id="dayThreeDate"> </span><br/> <span id="dayThreeTemp"></span> <br> <span id="dayThreeCond"> </span> </div>
+                        <!--Moderate Req-->
+                    </div>
+                    <!-- <div class="three-days">
+                         <div class="day1" id="one">
+                            <h4>day1</h4>
+                         </div>
+                        <div class="day2" id="two">
+                            <h4>day2</h4>
+                         </div>
+                        <div class="day3" id="three">
+                            <h4>day3</h4>
+                        </div>
+                    </div> -->
                 </div>
             </tr>
         </table>
+        
  
    </div>
+
 </section>   
     
 <script src="./index.js"></script>
