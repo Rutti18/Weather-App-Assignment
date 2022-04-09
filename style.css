@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+    padding: 0, 100px;
+    background: url(wallpaper.jpg);
+    height: 100vh;
+    /* display: flex;
+    justify-content: left; */
+}
+
+.zipcode{
+    
+    margin-right: 65%;
+}
+
+section {
+    margin-right: 41%;
+    margin-bottom: 100px;
+}
+
+.first-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+
+.report-box {
+    background-color: rgb(30, 131, 239);
+    width: 375px;
+    height: 550px;
+    margin-left: 100px;
+    border: 3px solid rgb(147, 147, 233);
+    box-shadow: 10px 10px rgb(107, 161, 243);
+    border-radius: 100px;
+}
+
+.zipcode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+}
+
+.current-city{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+    color: white;
+}
+
+.current-temperature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 230px;
+    color: white;
+}
+
+.current-date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    color: white;
+    padding-right: 220px;
+}
+
+.current-conditions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: white;
+    
+}
+
+.temperature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: white;
+    padding-right: 220px;
+}
+
+.weather-forecast{
+    margin: top 250px;px;
+    margin-left: 50px;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-style: italic;
+    
+}
+
+.h1 {
+    color: rgba(172, 218, 234, 0.906);
+}
+
+/* .nav-footer{
+    background-color: orange;
+    padding-bottom: 50px;
+    margin-top: 25px;
+    text-align: center; */
+
+
+    
+    
+  
+}

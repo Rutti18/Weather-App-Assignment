@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body">
+
+    <div class="zipcode">
+        <input type="text" name="zipCode" id="zipCode" placegolder="Enter Your Zip Code"/>
+        <button onclick="getLatLonByZipCode()"> Submit </button>
+    </div>
+   
+ <section>   
+
+    <div class="first-container">
+        <table>
+            <tr>
+                <th><div class="weather-forecast">
+                    <h1 class="h1">WEATHER <br> FORECAST</h1>
+                    <img src="" alt="">
+                </div></th>
+            </tr>
+
+            <tr>
+                <div class="report-box">
+
+                        <div class="current-city">
+                        <span> City </span> <br> <span class="city" id="city"></span> <br/>
+                    </div>
+
+
+                    <div class="current-conditions">
+                        <span> Current Conditions: </span> <br> <span class="currentContition" id="currentContition"></span> <span id="icon"> </span><br/>
+                    </div>
+
+                    
+                    <div class="current-temperature">
+                        <span> Current temperature</span> <br> <span class="currentTemp" id="currentTemp"></span><br/>
+                    </div>
+                    
+                    
+                    <div class="current-date">
+                        <span> Current Date: </span> <br> <span class="currentDate" id="currentDate"></span> <br/>
+                    </div>
+
+                    
+                    <div class="temperature">
+                        <span> Temp Hi/Lo: </span> <br> <span class="TempHiLow" id="TempHiLow">  </span><br/>
+                    </div>
+
+                </div>
+            </tr>
+        </table>
+ 
+   </div>
+</section>   
+    
+<script src="./index.js"></script>
+
+</body>
+</html>
